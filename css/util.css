@@ -1,0 +1,232 @@
+.text-prim {
+    color: #603f8b;
+}
+
+.text-sec {
+    color: #fd49a0;
+}
+
+/* Buttons */
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: #fd49a0;
+    border: none;
+    border-radius: 5px;
+    transition: opacity 0.25s, translate 0.25s;
+    box-shadow: 6.5px 6.5px 0.5px black;
+    border: 3px solid black;
+}
+
+.btn:hover {
+    translate: 0 -5px;
+}
+
+.btn-prim, .bg-prim {
+    background-color: #603f8b;
+    color: #fff;
+}
+
+
+
+.btn-sec, .bg-sec {
+    background-color: #fd49a0;
+    color: #fff;
+}
+
+.btn-tert, .bg-tert {
+    background-color: #a16ae8;
+    color: #fff;
+}
+
+.btn-dark, .bg-dark {
+    background-color: #333;
+    color: #fff;
+}   
+
+.btn-light {
+    background-color: #f4f4f4;
+    color: #000;
+}
+
+
+
+/* Flex */
+
+.flex-items {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.flex-items > div {
+    flex: 1 1 0;
+    padding: 20px;
+}
+
+
+
+/* Flex columns */
+
+
+.flex-columns .column .column-1, .flex-columns .column .column-2 {
+    height: 100%;
+}
+
+.flex-columns.flex-reverse .row, .flex-reverse .row {
+    flex-direction: row-reverse;
+}
+
+
+.flex-columns .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.flex-columns .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.flex-columns img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}   
+
+.flex-columns .column-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
+}
+
+.flex-columns h2 {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.flex-columns h4 {
+    margin-bottom: 10px;
+}
+
+.flex-columns p {
+    margin: 20px 0;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid white;
+    box-shadow: none;
+}
+
+/* Section header */
+
+.section-header {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.section-header h2 {
+    font-size: 36px;
+    margin: 20px auto;
+    display: block;
+    width: 650px;
+    padding: 30px 0;
+    color: white;
+    box-shadow: 6.5px 6.5px 0.5px black;
+    outline: 5px solid black;
+    border-radius: 1px;
+}
+
+.section-padding {
+    padding: 20px 20px 40px;
+}
+
+
+/* Flex grid */
+
+.flex-grid .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px;
+    flex-grow: 0;
+}
+
+.flex-grid .column {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    
+
+}
+
+
+.flex-grid img {
+    margin: 10px 0;
+    outline: 3.5px solid black;
+    box-shadow: 5px 5px 0.5px black;
+    object-fit: cover;
+    aspect-ratio: 14/9;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Transition Animations */
+
+.hidden-left .column {
+    transition: transform 1s, opacity 0.75s, filter 0.5s;
+
+    opacity: 0;
+    transform: translateX(-400px);
+}
+
+.hidden-right .column {
+    transition: transform 1s, opacity 0.75s, filter 0.5s;
+
+    opacity: 0;
+    transform: translateX(400px);
+}
+
+.show-left .column:nth-of-type(1), .show-right .column:nth-of-type(1) {
+    transition: opacity 0s, transform 1s;
+    transition-delay: 0.5s;
+    z-index: -1;
+}
+
+.show-left .column, .show-right .column {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+@media (max-width: 850px) {
+
+    .btn  {
+        padding: 12px 25px;
+    }
+
+    .section-header h2 {
+        font-size: 30px;
+        width: 300px;
+
+    }
+
+    .cases.flex-grid .row .column {
+        margin: 0;
+    }
+
+}

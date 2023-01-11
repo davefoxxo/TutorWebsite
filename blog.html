@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Our Blog</title>
+
+    <link rel="stylesheet" href="css/util.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script defer src="js/scroll.js"></script>
+</head>
+<body id="home">
+    <!-- .hero:before -->
+    <header class="hero blog">
+        <div id="navbar" class="navbar top">
+            <h1 class="logo">
+                <span class="text-prim"><i class="fas fa-book-open"></i> Your</span> Title
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#solutions">About</a></li>
+                    <li><a href="index.html#cases">Cases</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h1>Blog</h1>
+
+        </div>
+    </header>
+
+    <main>
+        <article class="solutions flex-columns">
+            <div class="row">
+                <div class="column">
+                    <div class="column-1">
+                        <img src="img/blog/blog1.jpg">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="column-2 bg-light">
+                        <h2>Blog Post A</h2>
+                        <p class="meta">
+                            <i class="fas fa-user"></i>    Posted by <strong>Name Surname</strong> | February 32nd, 2022
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis omnis labore quidem, tempore atque magnam fugit sed minus nemo esse et, eum rerum doloremque. Excepturi ipsa voluptate enim error quas?</p>
+                        <a href="post.html" class="btn btn-dark"><i class="fas fa-chevron-right"></i> Read more...</a>
+
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="solutions flex-columns flex-reverse">
+            <div class="row">
+                <div class="column">
+                    <div class="column-1">
+                        <img src="img/blog/blog2.jpg">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="column-2 bg-dark">
+                        <h2>Blog Post B</h2>
+                        <p class="meta">
+                            <i class="fas fa-user"></i>    Posted by <strong>Kippington Sandwich</strong> | February 83rd, 2022
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis omnis labore quidem, tempore atque magnam fugit sed minus nemo esse et, eum rerum doloremque. Excepturi ipsa voluptate enim error quas?</p>
+                        <a href="post.html" class="btn btn-light"><i class="fas fa-chevron-right"></i> Read more...</a>
+
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="solutions flex-columns">
+            <div class="row">
+                <div class="column">
+                    <div class="column-1">
+                        <img src="img/blog/blog3.jpg">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="column-2 bg-light">
+                        <h2>Blog Post C</h2>
+                        <p class="meta">
+                            <i class="fas fa-user"></i>    Posted by <strong>Ana Sutterfield</strong> | March 1st, 2022
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis omnis labore quidem, tempore atque magnam fugit sed minus nemo esse et, eum rerum doloremque. Excepturi ipsa voluptate enim error quas?</p>
+                        <a href="post.html" class="btn btn-dark"><i class="fas fa-chevron-right"></i> Read more...</a>
+
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+
+    </main>
+
+
+    <footer class="footer bg-dark">
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <p>Copyright &copy; 2022</p>
+    </footer>
+
+
+    <script src="js/scroll.js">
+        // const navbar = document.getElementById("navbar");
+        // let scrolled = false;
+
+        // window.onscroll = () => {
+
+        //     if (window.pageYOffset > 100) {
+        //         navbar.classList.remove("top");
+
+        //         if(!scrolled) {
+        //             navbar.style.transform = "translateY(-70px)";
+        //         } 
+
+        //         setTimeout(() => {
+        //             navbar.style.transform = "translateY(0px)";
+        //             scrolled = true;
+        //         }, 200);
+                
+        //     } else {
+        //         navbar.classList.add("top");
+        //         scrolled = false;
+        //     }
+        // }
+
+        // $("#navbar a, .btn").on("click", function(e) {
+        //     if(this.hash !== "") {
+        //         e.preventDefault();
+        //         const hash = this.hash;
+        //         $("html, body").animate(
+        //             {
+        //                 scrollTop: $(hash).offset().top - 100,
+
+        //             }, 800 //ms
+        //         ) 
+        //     }
+        // })
+
+    </script>
+
+    
+    
+</body>
+</html>
