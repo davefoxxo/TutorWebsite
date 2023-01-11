@@ -40,19 +40,21 @@ img {
 }
 
 main {
-    width: min(100% - 1.5rem, 1350px);
+    width: 100%;
     overflow: hidden;
     margin: 0 auto;
 }
 
 section {
-    width: 99%;
     display: block;
+    width: min(90%, 1350px);
+    margin: 0 auto;
+
 }
 
 .solutions, .contact {
     box-shadow: 6.5px 6.5px 0.5px black;
-    margin: 1rem 0;
+    margin: 1rem auto;
 }
 
 .contact .column {
@@ -106,7 +108,11 @@ a.ul {
     color: white;
 }
 
-
+main.about {
+    background-image: url(../img/waves3.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 .pricing .row {
@@ -223,7 +229,7 @@ a.ul {
 
 
 .works {
-    margin: 50px 0;
+    margin: 50px auto;
     flex: 0 0 auto;
 }
 
@@ -397,7 +403,7 @@ a.ul {
 }
 
 .david {
-    margin: 48px 0;
+    margin: 48px auto;
 }
 
 .david .column-1 {
@@ -405,10 +411,10 @@ a.ul {
 }
 
 .david img {
-    width: 400px;
+    max-width: 400px;
     display: block;
     margin-left: auto;
-    margin-right: 50px;
+    margin-right: 3%;
     box-shadow: 6.5px 6.5px 0.5px black;
 }
 

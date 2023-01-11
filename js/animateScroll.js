@@ -1,25 +1,23 @@
-const leftHiddenElements = document.querySelectorAll(".hidden-left");
-const rightHiddenElements = document.querySelectorAll(".hidden-right");
+const createObservers = (hiddenClass, showClass) => {
 
-const leftObserver = new IntersectionObserver((hiddenElements) => {
-    hiddenElements.forEach((element) => {
-        if(element.isIntersecting) {
-            element.target.classList.add("show-left");
-        } else {
-            element.target.classList.remove("show-left");
-        }
+    let hiddenElements = document.querySelectorAll(hiddenClass);
+
+    let myObserver = new IntersectionObserver((hiddenElements) => {
+        hiddenElements.forEach((element) => {
+            if(element.isIntersecting) {
+                element.target.classList.add(showClass);
+            } else {
+                element.target.classList.remove(showClass);
+            }
+        })
     })
-})
 
-const rightObserver = new IntersectionObserver((hiddenElements) => {
-    hiddenElements.forEach((element) => {
-        if(element.isIntersecting) {
-            element.target.classList.add("show-right");
-        } else {
-            element.target.classList.remove("show-right");
-        }
-    })
-})
+    hiddenElements.forEach((element) => myObserver.observe(element));
+}
 
-leftHiddenElements.forEach((element) => leftObserver.observe(element));
-rightHiddenElements.forEach((element) => rightObserver.observe(element));
+const iter = [
+            [".hidden-left", "show-left"],
+            [".hidden-right", "show-right"],
+            [".hidden-bottom", "show-bottom"]
+           ]
+iter.forEach((sublist) => {createObservers(sublist[0], sublist[1])})
