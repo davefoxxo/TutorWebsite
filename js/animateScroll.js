@@ -16,8 +16,17 @@ const createObservers = (hiddenClass, showClass) => {
 }
 
 const iter = [
-            [".hidden-left", "show-left"],
-            [".hidden-right", "show-right"],
-            [".hidden-bottom", "show-bottom"]
+            {
+                hiddenClass: ".hidden-left", 
+                showClass: "show-left"
+            },
+            {
+                hiddenClass: ".hidden-right", 
+                showClass: "show-right"
+            },
+            {
+                hiddenClass: ".hidden-bottom", 
+                showClass: "show-bottom"
+            },
            ]
-iter.forEach((sublist) => {createObservers(sublist[0], sublist[1])})
+iter.forEach((subObject) => {createObservers(subObject.hiddenClass, subObject.showClass)})

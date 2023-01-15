@@ -174,7 +174,6 @@ main.about {
     margin: 0 auto;
     text-align: center;
     background-color: #603f8b;
-    
 
 }
 
@@ -424,7 +423,7 @@ main.about {
     top: -20px;
     right: -20px;
     font-size: 70px;
-    background-color: #fd49a0;
+    background-color: #f00;
     display: block;
     width: 92px;
     text-align: center;
@@ -442,7 +441,7 @@ main.about {
 
 @media (max-width: 850px) {
     main {
-        width: 98%;
+        width: 100%;
         display: block;
         margin: 0 auto;
     }
@@ -503,6 +502,10 @@ main.about {
 
     .works .row .arrow {
         display: none;
+    }
+
+    .works {
+        margin-top: 100px;
     }
 
     .num {
