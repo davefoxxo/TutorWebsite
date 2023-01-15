@@ -321,6 +321,19 @@ main.about {
     transition: 0.33s
 }
 
+.cases {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/corner-blobs2.svg);
+    margin-top: 50px;
+}
+
+.sub-cases {
+    width: min(90%, 1350px);
+    margin: 0 auto;
+}
+
 .team img {
     border-radius: 50%;
 }
@@ -409,7 +422,9 @@ main.about {
     display: flex;
 }
 
+
 .david img {
+
     max-width: 400px;
     display: block;
     margin-left: auto;
