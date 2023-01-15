@@ -178,11 +178,9 @@
 
 .flex-grid img {
     margin: 10px 0;
-    outline: 3.5px solid black;
     box-shadow: 5px 5px 0.5px black;
     object-fit: cover;
     aspect-ratio: 14/9;
-    border-radius: 10px;
     cursor: pointer;
 }
 
@@ -210,6 +208,7 @@
     transform: translateY(400px);
     filter: blur(10px);
     z-index: 10;
+    
 }
 
 
@@ -229,10 +228,6 @@
     opacity: 1;
     transform: translateY(0%);
     filter: blur(0);
-}
-
-.solutions.hidden-bottom {
-    margin-bottom: 100px;
 }
 
 @media (max-width: 850px) {

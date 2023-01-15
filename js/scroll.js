@@ -15,6 +15,14 @@ window.onscroll = () => {
         return;
     }
 
+    if(currentOffset > 75) {
+        navbar.style.backgroundColor = "#603f8bcc";
+
+    } else {
+        navbar.style.backgroundColor = "#603f8bff";
+    }
+
+
 
     if(currentOffset > prevOffset) {
         navbar.style.transform = "translateY(-70px)";
