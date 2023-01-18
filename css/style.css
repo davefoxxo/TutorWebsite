@@ -110,7 +110,7 @@ a.ul {
 }
 
 main.about {
-    background-image: url(../img/waves-bg.svg);
+    background-image: url(../img/bg/waves-bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -326,7 +326,7 @@ main.about {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../img/corner-blobs2.svg);
+    background-image: url(../img/bg/corner-blobs2.svg);
     margin-top: 50px;
 }
 
@@ -470,7 +470,11 @@ main.about {
 
 .step {
     width: 100%;
-    padding: 50px 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .step:nth-of-type(1) {
@@ -480,6 +484,15 @@ main.about {
 
 .step:nth-of-type(2) {
     background-color: #E670A7;
+}
+
+.step .section-header {
+    flex: -10;
+    margin-top: 7vh;
+}
+
+.plans {
+    margin-bottom: auto;
 }
 
 
@@ -496,6 +509,26 @@ main.about {
 
 .plans-form input {
     box-shadow: 6.5px 6.5px 0.5px black;
+}
+
+
+
+.plans-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E34290;
+}
+
+h3.plans {
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin: 0 20px;
+    text-shadow: 6.5px 3px 0.5px black;
+    box-shadow: none;
 }
 
 /* Mobile */
@@ -591,11 +624,12 @@ main.about {
     }
 
     .works-flex .window-text h2 {
-        font-size: 24px;    
+        font-size: 30px; 
+        margin-top: 10px;   
     }
 
     .works-flex .window-text p {
-        font-size: 14px;    
+        font-size: 11px;    
     }
 
     .pricing .row .column {
@@ -608,6 +642,16 @@ main.about {
         margin-top: 100px;
         
     }
+
+    .step {
+        height: fit-content;
+        padding-bottom: 100px;
+    }
+
+    .step .section-header {
+        margin-top: 0;
+    }
+
 
 
 }
