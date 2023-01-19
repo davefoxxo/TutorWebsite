@@ -479,20 +479,15 @@ main.about {
 
 .step:nth-of-type(1) {
     padding-top: 0;
-    background-color: #E34290;
+    background-color: #fff;
 }
 
 .step:nth-of-type(2) {
-    background-color: #E670A7;
+    background-color: #dedede;
 }
 
-.step .section-header {
-    flex: -10;
-    margin-top: 7vh;
-}
-
-.plans {
-    margin-bottom: auto;
+.step:nth-of-type(2) {
+    background-color: #cbcbcb;
 }
 
 
@@ -510,6 +505,7 @@ main.about {
 .plans-form input {
     box-shadow: 6.5px 6.5px 0.5px black;
 }
+
 
 
 
