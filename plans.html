@@ -17,7 +17,7 @@
     <script defer src="js/scroll.js"></script>
 
 </head>
-<body id="home">
+<body>
     <!-- TODO BUSINESS WEBSITE -->
     <!-- MAKE A FAKE BUSINESS -->
     <!-- MAKE A LOGO AND MENU -->
@@ -47,7 +47,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="plans">
         <section class="step">
             <header class="section-header">
                 <h2 class="bg-prim mobile-header">Information and Payment</h2>
@@ -58,7 +58,7 @@
                     <div class="column">
                         <div class="column-1 plans-img">
                             <img src="img/bg/blob1.svg">
-                            <h3 class="plans">First, your info.</h3>
+                            <h3 class="plans-header">First, your info.</h3>
 
                         </div>
 
@@ -66,10 +66,11 @@
                     </div>
                     <div class="column bg-prim">
                         <div class="column-2">
-                            <form class="callback-form" action="">
+                            <form class="callback-form plans-form" action="">
                                 <div class="form-control">
                                     <label for="name"></label>
                                     <input type="text" name="name" id="name" placeholder="Enter Name">
+                                    
                                 </div>
                                 <div class="form-control">
                                     <label for="email"></label>
@@ -85,53 +86,93 @@
                     </div>
                 </div>
             </section>
-            
-
         </section>
 
-
-
-        <!-- <section class="step">
-            <section class="works works-flex">
+        <section class="step">
+            
+            <section class="solutions plans flex-columns">
                 <div class="row">
-                    <div class="column window">
-                        <div class="column-2">
-                            <img src="img/window_shadow.png" alt="">
-                            <span class="num">2</span>
-
-                            <div class="window-text">
-                                <h2>Select your plan.</h2>
-                                <br>
-                                <a href="index.html#pricing">Which plan is right for me?</a>
-                            </div>
+                    <div class="column">
+                        <div class="column-1 plans-img">
+                            <img src="img/bg/blob2.svg">
+                            <h3 class="plans-header">What's your plan?</h3>
 
                         </div>
+
+                        
                     </div>
-                    
+                    <div class="column bg-prim">
+                        <div class="column-2 radios">
+                            <div class="form-control">
+                                <input type="radio" name="plans" id="plan1">
+                                <label for="plan1">Plan 1 • <span class="text-sec">$15 for 30 min.</span></label>
+                            </div>
+                            
+                            <div class="form-control">
+                                <input type="radio" name="plans" id="plan2">
+                                <label for="plan2">Plan 2 • <span class="text-sec">$10 for 15 min.</span></label>
+                            </div>
+
+                            <div class="form-control">
+                                <input type="radio" name="plans" id="plan3">
+                                <label for="plan3">Plan 3 • <span class="text-sec">$30 for 60 min.</span></label>
+                            </div>
+
+    
+                        </div>
+                    </div>
                 </div>
             </section>
         </section>
 
+
         <section class="step">
 
-            <section class="works works-flex">
+            
+            <section class="solutions plans flex-columns">
                 <div class="row">
-                    <div class="column window">
-                        <div class="column-2">
-                            <img src="img/window_shadow.png" alt="">
-                            <span class="num">3</span>
-
-                            <div class="window-text">
-                                <h2>Pick the best date and time for you.</h2>
-                            </div>
+                    <div class="column">
+                        <div class="column-1 plans-img">
+                            <img src="img/bg/blob3.svg">
+                            <h3 class="plans-header">What about the time?</h3>
 
                         </div>
-                    </div>
-                    
-                </div>
-            </section> -->
 
+                        
+                    </div>
+                    <div class="column bg-prim">
+                        <div class="column-2">
+                            <form class="callback-form" action="">
+                                <div class="form-control">
+                                    <label for="date">Date</label>
+                                    <input type="date">
+                                </div>
+                                
+                                <div class="form-control">
+                                    <label for="times">Time</label>
+                                    <select name="times" id="times">
+                                        <option value="3">3:00 PM</option>
+                                        <option value="4">4:00 PM</option>
+                                        <option value="430">4:30 PM</option>
+                                        <option value="530">5:30 PM</option>
+                                        <option value="6">6:00 PM</option>
+                                        <option value="715">7:15 PM</option>
+                                    </select>
+                                </div>
+                                
+                            </form>
+    
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
+
+        <section class="final">
+            <a href="index.html" class="btn final-btn"><i class="fas fa-chevron-right"></i> Submit and Book</a>
+        </section>
+
+        
 
     </main>
 

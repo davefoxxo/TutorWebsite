@@ -479,24 +479,17 @@ main.about {
 
 .step:nth-of-type(1) {
     padding-top: 0;
-    background-color: #fff;
+    background-color: #E34290;
 }
 
 .step:nth-of-type(2) {
-    background-color: #dedede;
+    background-color: #a16ae8;
 }
 
-.step:nth-of-type(2) {
-    background-color: #cbcbcb;
+.step:nth-of-type(3) {
+    background-color: #F33A6A;
 }
 
-
-.plans-form {
-    max-width: 600px;
-    padding: 50px;
-    background-color: #603f8b;
-    box-shadow: 6.5px 6.5px 0.5px black;
-}
 
 .plans-form label {
     color: white;
@@ -506,6 +499,58 @@ main.about {
     box-shadow: 6.5px 6.5px 0.5px black;
 }
 
+.step .section-header {
+    margin-top: 7vh;
+}
+
+.step .plans {
+    margin: auto 0;
+}
+
+.step:first-of-type section.plans {
+    margin-top: 7vh;
+}
+
+.step input[type="radio"] {
+    height: 100%;
+    margin-left: 10px;
+}
+
+.radios {
+    display: flex;
+    align-items: center;
+}
+
+.radios .form-control {
+    margin: 1.5vh 0;
+    background-color: #fff;
+    box-shadow: 6.5px 6.5px 0.5px black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.radios label {
+    margin-left: 10px;
+    font-size: 24px;
+    line-height: 40px;
+    color: black;
+}
+
+.form-control .text-sec {
+    font-size: 16px;
+    vertical-align: middle;
+    right: 10px;
+    line-height: 40px;
+}
+
+select {
+    width: 50%;
+    background-color: white;
+    font-size: 16px;
+    text-align: center; 
+    padding: 8px;
+}
 
 
 
@@ -514,10 +559,11 @@ main.about {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #E34290;
+    background-color: #603f8b;
+
 }
 
-h3.plans {
+.plans-header {
     position: absolute;
     text-align: center;
     color: white;
@@ -525,6 +571,23 @@ h3.plans {
     margin: 0 20px;
     text-shadow: 6.5px 3px 0.5px black;
     box-shadow: none;
+}
+
+.final {
+    padding-bottom: 40px;
+    background-color: #F33A6A;
+    width: 100%;
+}
+
+.final-btn {
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+#plans {
+    padding-bottom: 0; 
 }
 
 /* Mobile */
@@ -641,13 +704,24 @@ h3.plans {
 
     .step {
         height: fit-content;
-        padding-bottom: 100px;
+        padding: 100px 0;
     }
 
     .step .section-header {
         margin-top: 0;
     }
 
+    .step .plans {
+        margin: auto 0;
+    }
+
+    .plans-header {
+        font-size: 50px;
+    }
+    
+    .radios .form-control {
+        justify-content: center;
+    }
 
 
 }
