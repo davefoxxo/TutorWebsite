@@ -6,8 +6,6 @@ const createObservers = (hiddenClass, showClass) => {
         hiddenElements.forEach((element) => {
             if(element.isIntersecting) {
                 element.target.classList.add(showClass);
-            } else {
-                element.target.classList.remove(showClass);
             }
         })
     })

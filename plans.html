@@ -15,25 +15,15 @@
 
     <script src="js/lightbox.min.js"></script>
     <script defer src="js/scroll.js"></script>
+    <script defer src="js/showOnScroll.js"></script>
 
 </head>
 <body>
-    <!-- TODO BUSINESS WEBSITE -->
-    <!-- MAKE A FAKE BUSINESS -->
-    <!-- MAKE A LOGO AND MENU -->
-    <!-- 1 BIG MAIN PAGE WITH 4 SECTIONS, -->
-    <!-- WITH A GALLARY, COPYRIGHT FREE. SMOOTH SCROLL -->
-    <!-- 3 TOTAL LEVELS DEEP WEBSITE. YOU CAN GO IN AND BACK OF PAGES -->
-    <!-- CONTACT FORM -->
-    <!-- RESPONSIVE! THIS WILL BE PUBLISHED -->
-
-
-    <!-- .hero:before -->
 
     <header id="about-hero" class="hero">
         <div id="navbar" class="navbar top">
             <h1 class="logo">
-                <span class="text-sec"><i class="fas fa-book-open"></i> Your</span> Title
+                <span class="text-sec"><i class="fas fa-calculator"></i> Math</span>ify
             </h1>
             <nav>
                 <ul>
@@ -41,19 +31,22 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="index.html#cases">Cases</a></li>
                     <li><a href="index.html#pricing">Pricing</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="plans.html">Book Now</a></li>
+
                 </ul>
             </nav>
         </div>
     </header>
 
+    <header class="section-header" style="background-color:#E34290 ">
+        <h2 class="bg-prim mobile-header">Information and Payment</h2>
+    </header>
+
     <main id="plans">
         <section class="step">
-            <header class="section-header">
-                <h2 class="bg-prim mobile-header">Information and Payment</h2>
-            </header>
             
-            <section class="solutions plans flex-columns">
+            
+            <section class="solutions plans flex-columns hidden-bottom">
                 <div class="row">
                     <div class="column">
                         <div class="column-1 plans-img">
@@ -68,17 +61,17 @@
                         <div class="column-2">
                             <form class="callback-form plans-form" action="">
                                 <div class="form-control">
-                                    <label for="name"></label>
-                                    <input type="text" name="name" id="name" placeholder="Enter Name">
+                                    <label for="name">Name</label>
+                                    <input type="text" name="name" id="name">
                                     
                                 </div>
                                 <div class="form-control">
-                                    <label for="email"></label>
-                                    <input type="email" name="E-Mail" id="E-Mail" placeholder="Enter E-Mail">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="E-Mail" id="E-Mail">
                                 </div>
                                 <div class="form-control">
-                                    <label for="phone"></label>
-                                    <input type="text" name="phone" id="phone" placeholder="Enter Phone">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="text" name="phone" id="phone">
                                 </div>
                             </form>
     
@@ -90,7 +83,7 @@
 
         <section class="step">
             
-            <section class="solutions plans flex-columns">
+            <section class="solutions plans flex-columns hidden-bottom">
                 <div class="row">
                     <div class="column">
                         <div class="column-1 plans-img">
@@ -118,6 +111,9 @@
                                 <label for="plan3">Plan 3 • <span class="text-sec">$30 for 60 min.</span></label>
                             </div>
 
+                            <p><a style="color:white; text-decoration: underline;" href="index.html#pricing">Need help choosing?</a></p>
+
+
     
                         </div>
                     </div>
@@ -129,7 +125,7 @@
         <section class="step">
 
             
-            <section class="solutions plans flex-columns">
+            <section class="solutions plans flex-columns hidden-bottom">
                 <div class="row">
                     <div class="column">
                         <div class="column-1 plans-img">
@@ -169,7 +165,7 @@
         </section>
 
         <section class="final">
-            <a href="index.html" class="btn final-btn"><i class="fas fa-chevron-right"></i> Submit and Book</a>
+            <a href="thanks.html" class="btn final-btn"><i class="fas fa-rocket"></i> Submit and Book</a>
         </section>
 
         
